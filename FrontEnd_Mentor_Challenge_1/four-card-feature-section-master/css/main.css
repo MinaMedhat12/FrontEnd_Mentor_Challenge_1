@@ -1,0 +1,116 @@
+/* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  .container{
+    margin: 0 auto;
+    padding-left:15px;
+    padding-right: 15px;
+}
+
+*{
+    font-family: 'Poppins' , serif;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: hsl(0, 0%, 98%);
+}
+.heading{
+    text-align:center;
+    padding-top: 20px;
+    margin-bottom: 60px;
+}
+.heading p:first-of-type{
+    font-size: 32px;
+    font-weight:200;
+    margin-bottom:10px;
+    color:rgba(0,0,0,0.4);
+}
+.heading h1{
+    margin:0;
+    color:rgba(0,0,0,0.7);
+}
+.heading p:last-of-type{
+    color:rgba(0,0,0,0.4);
+    max-width: 500px;
+    margin:20px auto;
+
+}
+@media (max-width:767px){
+    .heading h1 , .heading p:first-of-type{
+        font-size:25px;
+    }
+    .heading p:last-of-type{
+        font-size: 15px;
+    }
+}
+
+.content{
+    margin-bottom:60px;
+}
+.content .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@media (max-width:767px){
+    .content .container{
+        flex-direction: column;
+    }
+    .content .col .card{
+        margin-bottom:30px;
+    }
+}
+.content .col .card{
+    background-color: white;
+    padding:30px;
+    border-radius:5px ;  
+    box-shadow: 0 14px 20px rgba(0,0,0,0.10), 0 10px 10px rgba(0,0,0,0.10);
+    
+}
+.content .col .card img{
+    display:block;
+    margin-left:auto;
+}
+.content .col .card .text{
+    flex-basis:100%;
+}
+
+.content .col .red{
+    border-top: 5px solid hsl(0, 78%, 62%);
+    margin-bottom: 30px;
+}
+.content .col .cyan{
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+.content .col .yellow{
+    border-top: 5px solid hsl(34, 97%, 64%);
+
+}
+.content .col .blue{
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+.content .col .card .text h3{
+    font-weight: 400;
+    font-size: 26px;
+    margin:0;
+}
+.content .col .card .text p{
+    color: rgba(0,0,0,0.4);
+}
